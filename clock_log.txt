@@ -1,0 +1,54 @@
+User: Prashant
+Location: Berlin
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 18:53:53 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:01:00 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:05:37 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:08:40 2025
+----------------------------------------
+User: Prashant
+Location: Sydney
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:11:39 2025
+----------------------------------------
+User: Prahant
+Location: Tokyo
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:15:48 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 19:16:31 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 20:21:17 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Tue Jan 28 21:50:06 2025
+----------------------------------------
