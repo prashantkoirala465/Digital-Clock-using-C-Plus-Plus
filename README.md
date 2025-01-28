@@ -23,8 +23,8 @@ A feature-rich console-based digital clock application that displays time in bea
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
-   cd [project-directory]
+   git clone https://github.com/alexbytesback/Digital-Clock-using-C-Plus-Plus
+   cd Digital-Clock-using-C-Plus-Plus
    ```
 
 2. Compile the project:
