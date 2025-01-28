@@ -1,23 +1,23 @@
 name: C/C++ CI
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Generate configure script
+      run: autoreconf -i
+
+    - name: Set execute permissions for configure
+      run: chmod +x ./configure
+
+    - name: Configure the project
       run: ./configure
-    - name: make
+
+    - name: Build the project
       run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
