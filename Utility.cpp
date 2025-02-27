@@ -12,11 +12,11 @@ using namespace std;
 // getTimeZoneOffset() returns the hour offset from UTC for a given location.
 int Utility::getTimeZoneOffset(const std::string &location)
 {
-    if (location == "London")    return 1;
-    if (location == "Berlin")    return 2;
-    if (location == "Tokyo")     return 9;
-    if (location == "Sydney")    return 10;
-    if (location == "Kathmandu") return 5;
+    if (location == "London")    return 0;   // UTC+1
+    if (location == "Berlin")    return 1;   // UTC+1
+    if (location == "Tokyo")     return 9;   // UTC+9
+    if (location == "Sydney")    return 11;  // UTC+11
+    if (location == "Kathmandu") return 5;   // UTC+5:45 (hour component)
     return -9999; // Invalid location indicator.
 }
 

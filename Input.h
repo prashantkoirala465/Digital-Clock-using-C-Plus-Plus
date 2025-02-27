@@ -1,7 +1,7 @@
-#ifndef INPUT_H
+#ifndef INPUT_H           // If INPUT_H is not defined, then define it.
 #define INPUT_H
 
-#include <string>
+#include <string>         // Include string to use std::string in our class.
 
 // The Input class provides functions to obtain and validate input from the user.
 class Input
@@ -15,4 +15,4 @@ public:
     static std::string getLocationInput();
 };
 
-#endif
+#endif  // End of INPUT_H definition.

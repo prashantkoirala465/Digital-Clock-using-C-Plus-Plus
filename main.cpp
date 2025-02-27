@@ -1,7 +1,7 @@
-#include <iostream>
-#include "Clock.h"      // For creating and using the Clock class.
-#include "Input.h"      // For getting user input.
-#include "Utility.h"    // (Utility functions are used indirectly through Clock.)
+#include <iostream>       // For standard input and output.
+#include "Clock.h"        // Include the Clock class to create and use a Clock object.
+#include "Input.h"        // Include Input functions to get user input.
+#include "Utility.h"      // Utility functions are indirectly used by Clock.
 
 int main()
 {
@@ -16,9 +16,9 @@ int main()
     // 1. Ask the user for their name.
     std::cout << "1. Enter your name: ";
     std::string userName;
-    std::cin >> userName;
+    std::cin >> userName;  // Read the user's name from input.
 
-    // 2. Get the user’s location.
+    // 2. Get the user’s location using the Input class.
     std::string location = Input::getLocationInput();
 
     // 3. Ask the user which time format they prefer: 12-hour or 24-hour.
@@ -26,14 +26,14 @@ int main()
 
     // 4. Ask if the user wants to display seconds.
     int displaySecChoice = Input::getUserInput("4. Display seconds? (1 for Yes, 0 for No): ", 0, 1);
-    bool displaySeconds = (displaySecChoice == 1);
+    bool displaySeconds = (displaySecChoice == 1);  // Convert the integer choice to a boolean.
 
     // Create a Clock object with the provided information.
-    // The Clock constructor also fetches the weather and logs user preferences.
+    // The Clock constructor also fetches the weather and logs the user’s choices.
     Clock clock(userName, location, timeFormat, displaySeconds);
 
     // Start the clock, which begins the continuous update loop.
     clock.start();
 
-    return 0; // End the program (note: in this design, clock.start() never exits).
+    return 0; // End the program. (Note: clock.start() contains an infinite loop, so this line is never reached.)
 }

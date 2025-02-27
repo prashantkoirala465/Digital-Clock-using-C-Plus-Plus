@@ -1,31 +1,31 @@
-#ifndef CLOCK_H
+#ifndef CLOCK_H              // If CLOCK_H is not defined, then define it.
 #define CLOCK_H
 
-#include <string>
+#include <string>           // Include string to use std::string.
 
-// The Clock class handles user settings, time calculation, and the display loop.
+// The Clock class handles user settings, time calculations, and updating the display continuously.
 class Clock
 {
 private:
-    std::string userName;    // User’s name.
-    std::string location;    // Location (e.g., London, Tokyo).
-    int timeFormat;          // Time format: 12 or 24 hours.
-    bool displaySeconds;     // Whether to show seconds.
-    int timeZoneOffset;      // Hour offset based on location.
-    int minuteOffset;        // Minute offset (for non-whole hour differences).
+    std::string userName;    // Stores the user’s name.
+    std::string location;    // Stores the location (e.g., London, Tokyo) for time zone and weather purposes.
+    int timeFormat;          // Stores the time format: 12 for 12-hour or 24 for 24-hour format.
+    bool displaySeconds;     // Indicates whether seconds should be displayed.
+    int timeZoneOffset;      // Stores the hour offset from UTC for the given location.
+    int minuteOffset;        // Stores any additional minute offset (for cities with non-whole hour offsets).
 
-    // Weather information fetched from the internet.
+    // Stores the weather information fetched from the internet.
     std::string weatherInfo;
 
 public:
-    // Constructor: Initializes the clock with the user’s preferences.
+    // Constructor: Initializes the Clock with the provided user settings.
     Clock(const std::string &userName,
           const std::string &location,
           int timeFormat,
           bool displaySeconds);
 
-    // Starts the continuous clock loop (updating the display every second).
+    // The start() method enters an infinite loop to continuously update the clock display.
     void start();
 };
 
-#endif
+#endif  // End of CLOCK_H definition.
