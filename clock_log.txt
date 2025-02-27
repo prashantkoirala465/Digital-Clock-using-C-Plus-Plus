@@ -52,3 +52,27 @@ Time Format: 12-hour
 Display Seconds: Yes
 Timestamp: Tue Jan 28 21:50:06 2025
 ----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Mon Feb 24 15:40:07 2025
+----------------------------------------
+User: Prashant
+Location: Sydney
+Time Format: 24-hour
+Display Seconds: Yes
+Timestamp: Mon Feb 24 15:44:51 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Thu Feb 27 19:26:17 2025
+----------------------------------------
+User: Prashant
+Location: Kathmandu
+Time Format: 12-hour
+Display Seconds: Yes
+Timestamp: Thu Feb 27 20:22:16 2025
+----------------------------------------

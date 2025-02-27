@@ -3,27 +3,28 @@
 
 #include <string>
 
+// The Clock class handles user settings, time calculation, and the display loop.
 class Clock
 {
 private:
-    std::string userName;
-    std::string location;
-    int timeFormat;          // 12 or 24
-    bool displaySeconds;
-    int timeZoneOffset;
-    int minuteOffset;
+    std::string userName;    // User’s name.
+    std::string location;    // Location (e.g., London, Tokyo).
+    int timeFormat;          // Time format: 12 or 24 hours.
+    bool displaySeconds;     // Whether to show seconds.
+    int timeZoneOffset;      // Hour offset based on location.
+    int minuteOffset;        // Minute offset (for non-whole hour differences).
 
-    // Store fetched weather info
+    // Weather information fetched from the internet.
     std::string weatherInfo;
 
 public:
-    // Constructor
+    // Constructor: Initializes the clock with the user’s preferences.
     Clock(const std::string &userName,
           const std::string &location,
           int timeFormat,
           bool displaySeconds);
 
-    // Starts the clock loop (displays time continuously)
+    // Starts the continuous clock loop (updating the display every second).
     void start();
 };
 
