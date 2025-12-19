@@ -29,7 +29,7 @@ A feature-rich console-based digital clock application that displays time in bea
 
 2. Compile the project:
    ```bash
-   g++ -std=c++17 main.cpp Clock.cpp Display.cpp Input.cpp Utility.cpp -o DigitalClock
+   g++ -std=c++17 main.cpp Clock.cpp Display.cpp Input.cpp Utility.cpp -lcurl -o DigitalClock
    ```
 
 ## Usage
